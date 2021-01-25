@@ -32,7 +32,7 @@
   <div class="extra content">
     <div class="author">
       {{- if isset .Params "avatar" -}}
-        <img class="ui avatar image" src="{{ .Params.avatar }}" />
+      <a href="{{ .Site.BaseURL }}"><img class="ui avatar image" src="{{ .Params.avatar }}" /></a>
       {{- else -}}
         @&nbsp;
       {{- end -}}
